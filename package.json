@@ -3,10 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve -o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "install_json_server": "npm install -g json-server",
+    "info_json_server": "dont execute this, use below one: 'npm run start_json_server'",
+    "start_json_server": "cd src/assets/db_json & json-server --watch db.json"
   },
   "private": true,
   "dependencies": {

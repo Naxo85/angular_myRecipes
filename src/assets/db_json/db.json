@@ -1,0 +1,225 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "user": "John Doe",
+      "email": "john.doe@gmail.com"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Caldo gallego",
+      "ingredients": ["verdura", "patatas", "lacon"],
+      "url_image": "../images/image1.jpg",
+      "image_type": "jpg",
+      "vegetarian": false,
+      "glutenFree": false,
+      "readyInMinutes": 60,
+      "summary": "typical galician dish",
+      "cuisines": ["Galician", "Spanish"]
+    },
+    {
+      "id": "2",
+      "title": "Caldo gallego 2",
+      "ingredients": ["verdura", "patatas", "lacon"],
+      "url_image": "../images/image1.jpg",
+      "image_type": "jpg",
+      "vegetarian": false,
+      "glutenFree": false,
+      "readyInMinutes": 60,
+      "summary": "typical galician dish",
+      "cuisines": ["Galician", "Spanish"]
+    },
+    {
+      "id": "3",
+      "title": "Caldo gallego 3",
+      "ingredients": ["verdura", "patatas", "lacon"],
+      "url_image": "../images/image1.jpg",
+      "image_type": "jpg",
+      "vegetarian": false,
+      "glutenFree": false,
+      "readyInMinutes": 60,
+      "summary": "typical galician dish",
+      "cuisines": ["Galician", "Spanish"]
+    },
+    {
+      "id": "4",
+      "title": "Caldo gallego 4",
+      "ingredients": ["verdura", "patatas", "lacon"],
+      "url_image": "../images/image1.jpg",
+      "image_type": "jpg",
+      "vegetarian": false,
+      "glutenFree": false,
+      "readyInMinutes": 60,
+      "summary": "typical galician dish",
+      "cuisines": ["Galician", "Spanish"]
+    },
+    {
+      "id": "5",
+      "title": "Caldo gallego 5",
+      "ingredients": ["verdura", "patatas", "lacon"],
+      "url_image": "../images/image1.jpg",
+      "image_type": "jpg",
+      "vegetarian": false,
+      "glutenFree": false,
+      "readyInMinutes": 60,
+      "summary": "typical galician dish",
+      "cuisines": ["Galician", "Spanish"]
+    },
+    {
+      "id": "6",
+      "title": "Caldo gallego 6",
+      "ingredients": ["verdura", "patatas", "lacon"],
+      "url_image": "../images/image1.jpg",
+      "image_type": "jpg",
+      "vegetarian": false,
+      "glutenFree": false,
+      "readyInMinutes": 60,
+      "summary": "typical galician dish",
+      "cuisines": ["Galician", "Spanish"]
+    },
+    {
+      "id": "7",
+      "title": "Caldo gallego 7",
+      "ingredients": ["verdura", "patatas", "lacon"],
+      "url_image": "../images/image1.jpg",
+      "image_type": "jpg",
+      "vegetarian": false,
+      "glutenFree": false,
+      "readyInMinutes": 60,
+      "summary": "typical galician dish",
+      "cuisines": ["Galician", "Spanish"]
+    },
+    {
+      "id": "8",
+      "title": "Chiken with curry",
+      "ingredients": ["curry", "rice", "chicken"],
+      "url_image": "../images/image2.jpg",
+      "image_type": "jpg",
+      "vegetarian": false,
+      "glutenFree": false,
+      "readyInMinutes": 30,
+      "summary": "Curry Beef Over Rice Noodles might be just the main course you are searching for. This recipe serves 2 and costs $2.74 per serving. One serving contains <b>652 calories</b>, <b>61g of protein</b>, and <b>20g of fat</b>. 1 person were impressed by this recipe. It is a good option if you're following a <b>dairy free</b> diet. Head to the store and pick up onions, natural roasted peanuts, sambal oelek, and a few other things to make it today. To use up the fresh ginger you could follow this main course with the <a href=\"https://spoonacular.com/recipes/fresh-ginger-cookies-624884\">Fresh Ginger Cookies</a> as a dessert. This recipe is typical of Indian cuisine. From preparation to the plate, this recipe takes approximately <b>45 minutes</b>. All things considered, we decided this recipe <b>deserves a spoonacular score of 87%</b>. This score is awesome. Try <a href=\"https://spoonacular.com/recipes/burmese-beef-curry-with-vermicelli-rice-noodles-598957\">Burmese Beef Curry with Vermicelli Rice Noodles</a>, <a href=\"https://spoonacular.com/recipes/crockpot-beef-curry-with-noodles-506865\">Crockpot Beef Curry with Noodles</a>, and <a href=\"https://spoonacular.com/recipes/thai-style-red-curry-beef-noodles-248937\">Thai-Style Red Curry Beef Noodles</a> for similar recipes.",
+      "cuisines": ["Indian", "Asian"],
+      "steps": [
+        {
+          "number": 1,
+          "step": "In nonstick skillet, add oil and saut beef over medium-high heat for 3-4 min.",
+          "ingredients": [
+            {
+              "id": 23572,
+              "name": "beef",
+              "localizedName": "beef",
+              "image": "beef-cubes-raw.png"
+            },
+            {
+              "id": 4582,
+              "name": "cooking oil",
+              "localizedName": "cooking oil",
+              "image": "vegetable-oil.jpg"
+            }
+          ],
+          "equipment": [
+            {
+              "id": 404645,
+              "name": "frying pan",
+              "localizedName": "frying pan",
+              "image": "pan.png"
+            }
+          ],
+          "length": {
+            "number": 4,
+            "unit": "minutes"
+          }
+        },
+        {
+          "number": 2,
+          "step": "Add red onions, garlic, saut for about 4 minutes.",
+          "ingredients": [
+            {
+              "id": 10011282,
+              "name": "red onion",
+              "localizedName": "red onion",
+              "image": "red-onion.png"
+            },
+            {
+              "id": 11215,
+              "name": "garlic",
+              "localizedName": "garlic",
+              "image": "garlic.png"
+            }
+          ],
+          "equipment": [],
+          "length": {
+            "number": 4,
+            "unit": "minutes"
+          }
+        },
+        {
+          "number": 3,
+          "step": "Add fresh ginger, sambal oelek, curry powder; cook, stirring, until fragrant, about 45 seconds.",
+          "ingredients": [
+            {
+              "id": 2015,
+              "name": "curry powder",
+              "localizedName": "curry powder",
+              "image": "curry-powder.jpg"
+            },
+            {
+              "id": 10211216,
+              "name": "fresh ginger",
+              "localizedName": "fresh ginger",
+              "image": "ginger.png"
+            },
+            {
+              "id": 0,
+              "name": "sambal oelek",
+              "localizedName": "sambal oelek",
+              "image": "chili-paste.png"
+            }
+          ],
+          "equipment": []
+        },
+        {
+          "number": 4,
+          "step": "Add soy sauce, lime juice and peanuts.  Saut another 30 seconds.",
+          "ingredients": [
+            {
+              "id": 9160,
+              "name": "lime juice",
+              "localizedName": "lime juice",
+              "image": "lime-juice.png"
+            },
+            {
+              "id": 16124,
+              "name": "soy sauce",
+              "localizedName": "soy sauce",
+              "image": "soy-sauce.jpg"
+            },
+            {
+              "id": 16091,
+              "name": "peanuts",
+              "localizedName": "peanuts",
+              "image": "peanuts.png"
+            }
+          ],
+          "equipment": []
+        },
+        {
+          "number": 5,
+          "step": "Server over rice noodles.",
+          "ingredients": [
+            {
+              "id": 20133,
+              "name": "rice noodles",
+              "localizedName": "rice noodles",
+              "image": "dried-rice-noodles.jpg"
+            }
+          ],
+          "equipment": []
+        }
+      ]
+    }
+  ]
+}
