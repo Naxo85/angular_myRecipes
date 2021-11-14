@@ -110,28 +110,14 @@
             {
               "id": 23572,
               "name": "beef",
-              "localizedName": "beef",
               "image": "beef-cubes-raw.png"
             },
             {
               "id": 4582,
               "name": "cooking oil",
-              "localizedName": "cooking oil",
               "image": "vegetable-oil.jpg"
             }
-          ],
-          "equipment": [
-            {
-              "id": 404645,
-              "name": "frying pan",
-              "localizedName": "frying pan",
-              "image": "pan.png"
-            }
-          ],
-          "length": {
-            "number": 4,
-            "unit": "minutes"
-          }
+          ]
         },
         {
           "number": 2,
@@ -140,21 +126,14 @@
             {
               "id": 10011282,
               "name": "red onion",
-              "localizedName": "red onion",
               "image": "red-onion.png"
             },
             {
               "id": 11215,
               "name": "garlic",
-              "localizedName": "garlic",
               "image": "garlic.png"
             }
-          ],
-          "equipment": [],
-          "length": {
-            "number": 4,
-            "unit": "minutes"
-          }
+          ]
         },
         {
           "number": 3,
@@ -163,23 +142,19 @@
             {
               "id": 2015,
               "name": "curry powder",
-              "localizedName": "curry powder",
               "image": "curry-powder.jpg"
             },
             {
               "id": 10211216,
               "name": "fresh ginger",
-              "localizedName": "fresh ginger",
               "image": "ginger.png"
             },
             {
               "id": 0,
               "name": "sambal oelek",
-              "localizedName": "sambal oelek",
               "image": "chili-paste.png"
             }
-          ],
-          "equipment": []
+          ]
         },
         {
           "number": 4,
@@ -188,23 +163,19 @@
             {
               "id": 9160,
               "name": "lime juice",
-              "localizedName": "lime juice",
               "image": "lime-juice.png"
             },
             {
               "id": 16124,
               "name": "soy sauce",
-              "localizedName": "soy sauce",
               "image": "soy-sauce.jpg"
             },
             {
               "id": 16091,
               "name": "peanuts",
-              "localizedName": "peanuts",
               "image": "peanuts.png"
             }
-          ],
-          "equipment": []
+          ]
         },
         {
           "number": 5,
@@ -213,11 +184,9 @@
             {
               "id": 20133,
               "name": "rice noodles",
-              "localizedName": "rice noodles",
               "image": "dried-rice-noodles.jpg"
             }
-          ],
-          "equipment": []
+          ]
         }
       ]
     }

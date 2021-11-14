@@ -6,20 +6,24 @@ import { ListComponent } from './pages/list/list.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: '', // '/recipes'
     component: HomeComponent,
     children: [
       {
-        path: 'create',
+        path: '', // '/recipes'
+        component: ListComponent,
+      },
+      {
+        path: 'create', // '/recipes/create'
         component: CreateComponent,
       },
       {
-        path: 'list',
+        path: 'list', // '/recipes/list'
         component: ListComponent,
       },
       {
         path: '**',
-        redirectTo: 'home',
+        redirectTo: 'list',
       },
     ],
   },
