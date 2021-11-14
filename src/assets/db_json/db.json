@@ -35,55 +35,6 @@
       "id": "3",
       "title": "Caldo gallego 3",
       "ingredients": ["verdura", "patatas", "lacon"],
-      "url_image": "../images/image1.jpg",
-      "image_type": "jpg",
-      "vegetarian": false,
-      "glutenFree": false,
-      "readyInMinutes": 60,
-      "summary": "typical galician dish",
-      "cuisines": ["Galician", "Spanish"]
-    },
-    {
-      "id": "4",
-      "title": "Caldo gallego 4",
-      "ingredients": ["verdura", "patatas", "lacon"],
-      "url_image": "../images/image1.jpg",
-      "image_type": "jpg",
-      "vegetarian": false,
-      "glutenFree": false,
-      "readyInMinutes": 60,
-      "summary": "typical galician dish",
-      "cuisines": ["Galician", "Spanish"]
-    },
-    {
-      "id": "5",
-      "title": "Caldo gallego 5",
-      "ingredients": ["verdura", "patatas", "lacon"],
-      "url_image": "../images/image1.jpg",
-      "image_type": "jpg",
-      "vegetarian": false,
-      "glutenFree": false,
-      "readyInMinutes": 60,
-      "summary": "typical galician dish",
-      "cuisines": ["Galician", "Spanish"]
-    },
-    {
-      "id": "6",
-      "title": "Caldo gallego 6",
-      "ingredients": ["verdura", "patatas", "lacon"],
-      "url_image": "../images/image1.jpg",
-      "image_type": "jpg",
-      "vegetarian": false,
-      "glutenFree": false,
-      "readyInMinutes": 60,
-      "summary": "typical galician dish",
-      "cuisines": ["Galician", "Spanish"]
-    },
-    {
-      "id": "7",
-      "title": "Caldo gallego 7",
-      "ingredients": ["verdura", "patatas", "lacon"],
-      "url_image": "../images/image1.jpg",
       "image_type": "jpg",
       "vegetarian": false,
       "glutenFree": false,
@@ -189,6 +140,54 @@
           ]
         }
       ]
+    },
+    {
+      "id": "4",
+      "title": "Caldo gallego 4",
+      "ingredients": ["verdura", "patatas", "lacon"],
+      "url_image": "../images/image1.jpg",
+      "image_type": "jpg",
+      "vegetarian": false,
+      "glutenFree": false,
+      "readyInMinutes": 60,
+      "summary": "typical galician dish",
+      "cuisines": ["Galician", "Spanish"]
+    },
+    {
+      "id": "5",
+      "title": "Caldo gallego 5",
+      "ingredients": ["verdura", "patatas", "lacon"],
+      "url_image": "../images/image1.jpg",
+      "image_type": "jpg",
+      "vegetarian": false,
+      "glutenFree": false,
+      "readyInMinutes": 60,
+      "summary": "typical galician dish",
+      "cuisines": ["Galician", "Spanish"]
+    },
+    {
+      "id": "6",
+      "title": "Caldo gallego 6",
+      "ingredients": ["verdura", "patatas", "lacon"],
+      "url_image": "../images/image1.jpg",
+      "image_type": "jpg",
+      "vegetarian": false,
+      "glutenFree": false,
+      "readyInMinutes": 60,
+      "summary": "typical galician dish",
+      "cuisines": ["Galician", "Spanish"]
+    },
+    {
+      "id": "7",
+      "title": "Caldo gallego 7",
+      "ingredients": ["verdura", "patatas", "lacon"],
+      "url_image": "../images/image1.jpg",
+      "image_type": "jpg",
+      "vegetarian": false,
+      "glutenFree": false,
+      "readyInMinutes": 60,
+      "summary": "typical galician dish",
+      "cuisines": ["Galician", "Spanish"]
     }
   ]
 }

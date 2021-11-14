@@ -9,9 +9,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { CreateComponent } from './pages/create/create.component';
 import { DetailsComponent } from './pages/details/details.component';
 import { ListComponent } from './pages/list/list.component';
+import { RecipeCardComponent } from './components/recipe-card/recipe-card.component';
+import { GetUrlImagePipe } from './pipes/get-url-image.pipe';
 
 @NgModule({
-  declarations: [HomeComponent, CreateComponent, DetailsComponent, ListComponent],
+  declarations: [HomeComponent, CreateComponent, DetailsComponent, ListComponent, RecipeCardComponent, GetUrlImagePipe],
   imports: [CommonModule, RecipesRoutingModule, FlexLayoutModule, MaterialModule],
 })
 export class RecipesModule {}

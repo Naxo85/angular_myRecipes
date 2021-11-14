@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      {{ recipe.title }}
+    </mat-card-title>
+    <mat-card-subtitle> {{ recipe.readyInMinutes }} min </mat-card-subtitle>
+  </mat-card-header>
+
+  <!--TODO: retrieve these images from some other place: AWS S3?? -->
+  <img mat-card-image [src]="recipe | getUrlImage" />
+  <!--<img mat-card-image src="assets/images/{{ recipe.url_image }}" />-->
+
+  <mat-card-content>
+    <span *ngFor="let cuisine of recipe.cuisines">{{ cuisine }} </span>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button color="accent">Details</button>
+    <button mat-raised-button color="accent">Edit...</button>
+  </mat-card-actions>
+</mat-card>
