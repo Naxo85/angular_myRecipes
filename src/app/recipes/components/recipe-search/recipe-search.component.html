@@ -1,0 +1,22 @@
+<mat-form-field appearance="fill" (click)="populating()">
+  <mat-label>search...</mat-label>
+  <input
+    type="text"
+    placeholder="Pick one"
+    aria-label="search..."
+    matInput
+    [(ngModel)]="term"
+    [matAutocomplete]="auto"
+    (input)="filtering()"
+  />
+  <mat-autocomplete
+    autoActiveFirstOption
+    #auto="matAutocomplete"
+    (optionSelected)="processSelectedOption($event)"
+  >
+    <mat-option *ngFor="let recipe of filteredRecipes" [value]="recipe">
+      {{ recipe.title }}
+    </mat-option>
+    <mat-option value="" *ngIf="filteredRecipes.length == 0"> No results </mat-option>
+  </mat-autocomplete>
+</mat-form-field>

@@ -5,7 +5,7 @@ import { Recipe } from '../interfaces/recipes.interface';
 @Pipe({
   name: 'getUrlImage',
 })
-export class GetUrlImagePipe implements PipeTransform {
+export class UrlImagePipe implements PipeTransform {
   transform(recipe: Recipe): string {
     return recipe.url_image === undefined
       ? 'assets/images/no-image.png'

@@ -1,4 +1,11 @@
-<h1>My Recipes</h1>
+<div fxLayout.gt-xs="row" fxLayout.xs="column" fxLayoutAlign=" center" fxLayoutGap.gt-xs="50px">
+  <div>
+    <h1>My Recipes</h1>
+  </div>
+  <div>
+    <app-recipe-search [recipes]="recipes"></app-recipe-search>
+  </div>
+</div>
 <mat-divider></mat-divider>
 <br />
 <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="20px grid">

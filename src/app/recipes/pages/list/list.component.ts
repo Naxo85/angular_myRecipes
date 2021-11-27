@@ -12,6 +12,7 @@ export class ListComponent implements OnInit {
   constructor(private recipesService: RecipesService) {}
 
   recipes: Recipe[] = [];
+  term: String = '';
 
   ngOnInit(): void {
     this.recipesService.getRecipes().subscribe((recipes) => {
