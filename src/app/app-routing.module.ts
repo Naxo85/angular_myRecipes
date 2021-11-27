@@ -5,6 +5,7 @@ import { ErrorPageComponent } from './shared/error-page/error-page.component';
 const routes: Routes = [
   {
     path: 'auth',
+    // INFO: lazy load
     loadChildren: () => import('./auth/auth.module').then((module) => module.AuthModule),
   },
   {

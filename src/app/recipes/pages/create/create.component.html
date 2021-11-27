@@ -1,1 +1,48 @@
-<p>create works!</p>
+<h1>Add new recipe</h1>
+<mat-divider></mat-divider>
+<div fxLayout.gt-xs="row" fxLayout.xs="column" fxLayoutGap.gt-xs="30px">
+  <div fxFlex="50" fxLayout="column" fxfill>
+    <mat-form-field class="vertical-margin" fxFlex="100">
+      <mat-label>Id</mat-label>
+      <input matInput type="text" readonly value="id" />
+    </mat-form-field>
+    <mat-form-field class="vertical-margin" fxFlex="100">
+      <mat-label>Title</mat-label>
+      <input matInput type="text" required />
+    </mat-form-field>
+    <div fxLayout.gt-xs="row" fxLayout.xs="column" class="vertical-margin">
+      <mat-checkbox [(ngModel)]="vegetarian" fxFlex="50">Vegetarian</mat-checkbox>
+      <mat-checkbox [(ngModel)]="glutenFree" fxFlex="50">Gluten free</mat-checkbox>
+    </div>
+    <mat-form-field class="vertical-margin" fxFlex="100">
+      <mat-label>Ready in (Minutes)</mat-label>
+      <input matInput type="number" min="1" />
+    </mat-form-field>
+    <mat-form-field class="vertical-margin" fxFlex="100">
+      <mat-label>Url Image</mat-label>
+      <input matInput type="text" />
+    </mat-form-field>
+  </div>
+  <div fxFlex="50">
+    <img fxFill mat-card-image [src]="undefined | getUrlImage" />
+  </div>
+</div>
+
+<div>Select cuisines:</div>
+<div class="vertical-margin">
+  <div fxLayout.gt-xs="row wrap" fxLayout.xs="column" fxLayoutGap.gt-xs="10px">
+    <div *ngFor="let cuisine of cuisinesEnum | enumToArray">
+      <mat-checkbox (click)="addCuisine(cuisine)">{{ cuisine }}</mat-checkbox>
+    </div>
+  </div>
+</div>
+
+<div fxLayout="column">
+  <mat-form-field class="vertical-margin" appearance="fill">
+    <mat-label>Summary</mat-label>
+    <textarea matInput placeholder="Write brief description..." required></textarea>
+  </mat-form-field>
+</div>
+<div *ngFor="let item of cuisines">{{ item }}</div>
+<h2>Steps</h2>
+<mat-divider></mat-divider>
