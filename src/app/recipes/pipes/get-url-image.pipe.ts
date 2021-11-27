@@ -10,7 +10,7 @@ export class UrlImagePipe implements PipeTransform {
     if (recipe == undefined) {
       return 'assets/images/no-image.png';
     }
-    return recipe.url_image === undefined
+    return recipe.url_image === undefined || recipe.url_image === ''
       ? 'assets/images/no-image.png'
       : `assets/images/${recipe.url_image}`;
   }

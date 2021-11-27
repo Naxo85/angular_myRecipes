@@ -1,12 +1,11 @@
 export interface Recipe {
   id?: string;
   title: string;
-  ingredients: string[];
-  url_image: string;
+  url_image: string | undefined;
   image_type: string;
   vegetarian: boolean;
-  glutenFree: boolean;
-  readyInMinutes: number;
+  gluten_free: boolean;
+  ready_in_minutes: number;
   summary: string;
   cuisines: string[];
   steps?: Step[];

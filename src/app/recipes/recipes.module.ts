@@ -14,6 +14,7 @@ import { RecipeCardComponent } from './components/recipe-card/recipe-card.compon
 import { UrlImagePipe } from './pipes/get-url-image.pipe';
 import { RecipeSearchComponent } from './components/recipe-search/recipe-search.component';
 import { EnumToArrayPipe } from './pipes/enum-to-array.pipe';
+import { StepComponent } from './components/step/step.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { EnumToArrayPipe } from './pipes/enum-to-array.pipe';
     UrlImagePipe,
     RecipeSearchComponent,
     EnumToArrayPipe,
+    StepComponent,
   ],
   imports: [CommonModule, RecipesRoutingModule, FlexLayoutModule, MaterialModule, FormsModule],
 })
