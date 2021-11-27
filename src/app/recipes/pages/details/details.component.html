@@ -1,1 +1,35 @@
-<p>details works!</p>
+<mat-grid-list cols="1" *ngIf="!recipe; else recipeDetails">
+  <mat-grid-tile>
+    <mat-spinner></mat-spinner>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<ng-template #recipeDetails>
+  <h1>{{ recipe.title }}</h1>
+  <mat-divider></mat-divider>
+  <br />
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutGap.gt-sm="30px">
+    <div fxFlex="50">
+      <img mat-card-image [src]="recipe | getUrlImage" />
+    </div>
+    <div fxFlex="50">
+      <mat-list>
+        <!-- TODO: create pipes for nicer messages and badges for gluten/vegetarian -->
+        <mat-list-item> Vegetarian dish: {{ recipe.vegetarian }} </mat-list-item>
+        <mat-list-item> Gluten free: {{ recipe.glutenFree }} </mat-list-item>
+        <mat-list-item> Ready in... {{ recipe.readyInMinutes }} minutes</mat-list-item>
+        <mat-list-item>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Summary </mat-panel-title>
+            </mat-expansion-panel-header>
+            {{ recipe.summary }}
+          </mat-expansion-panel>
+        </mat-list-item>
+      </mat-list>
+      <!-- TODO: style this padding button -->
+      <br />
+      <button mat-raised-button color="accent" (click)="return()">Return to list</button>
+    </div>
+  </div>
+</ng-template>
