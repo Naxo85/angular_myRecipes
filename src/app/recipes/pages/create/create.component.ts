@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { switchMap } from 'rxjs/operators';
+
 import { Cuisines, Ingredient, Recipe, Step } from '../../interfaces/recipes.interface';
 import { UrlImagePipe } from '../../pipes/get-url-image.pipe';
 import { RecipesService } from '../../services/recipes.service';
@@ -9,19 +12,23 @@ import { RecipesService } from '../../services/recipes.service';
   styles: [
     `
       .vertical-margin {
-        margin: 10px 0;
+        margin: 40px 0 0 0;
       }
     `,
   ],
 })
-export class CreateComponent {
-  constructor(private recipesService: RecipesService) {}
+export class CreateComponent implements OnInit {
+  ngOnInit(): void {
+    this.activatedRoute.params
+      .pipe(switchMap(({ id }) => this.recipesService.getRecipeById(id)))
+      .subscribe((recipe) => (this.recipe = recipe));
+  }
+  constructor(private activatedRoute: ActivatedRoute, private recipesService: RecipesService) {}
 
   vegetarian: boolean = false;
   glutenFree: boolean = false;
   id: string = '';
   cuisinesEnum: Object = Cuisines;
-  last_number_step: number = 0;
 
   recipe: Recipe = {
     title: '',
@@ -35,12 +42,20 @@ export class CreateComponent {
     steps: [],
   };
 
+  cuisineChecked(cuisine: string): boolean {
+    if (this.recipe.cuisines.includes(cuisine)) {
+      return true;
+    }
+    return false;
+  }
+
   addCuisine(cuisine: string) {
     if (this.recipe.cuisines.includes(cuisine)) {
       this.recipe.cuisines.splice(this.recipe.cuisines.indexOf(cuisine), 1);
     } else {
       this.recipe.cuisines.push(cuisine);
     }
+    return false;
   }
 
   getimageUrl() {
@@ -49,9 +64,8 @@ export class CreateComponent {
   }
 
   addBlankStep() {
-    this.last_number_step = this.last_number_step + 1;
     let step: Step = {
-      number: this.last_number_step,
+      number: (this.recipe.steps?.length || 0) + 1,
       ingredients: [],
       step: '',
     };
@@ -59,14 +73,20 @@ export class CreateComponent {
   }
 
   saveRecipe() {
-    console.log(this.recipe);
     if (this.recipe.title.trim().length === 0) {
       return;
     } else if (this.recipe.summary.trim().length === 0) {
       return;
     }
-    this.recipesService.addRecipe(this.recipe).subscribe((resp) => {
-      console.log('Response: ', resp);
-    });
+
+    if (this.recipe.id) {
+      this.recipesService.updateRecipe(this.recipe).subscribe((recipe) => {
+        this.recipe = recipe;
+      });
+    } else {
+      this.recipesService.addRecipe(this.recipe).subscribe((recipe) => {
+        this.recipe = recipe;
+      });
+    }
   }
 }

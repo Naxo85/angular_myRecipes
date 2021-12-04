@@ -336,6 +336,37 @@
         }
       ],
       "id": "S1XM03K"
+    },
+    {
+      "title": "Caldo sin patatas",
+      "url_image": "image1.jpg",
+      "image_type": "",
+      "vegetarian": false,
+      "gluten_free": true,
+      "ready_in_minutes": 45,
+      "summary": "Pues un caldo glutenn free",
+      "cuisines": [
+        "Galician",
+        "Spanish",
+        "Asian"
+      ],
+      "steps": [
+        {
+          "number": 1,
+          "ingredients": [
+            {
+              "name": "chorizo",
+              "image": "toUpdate"
+            },
+            {
+              "name": "costilla",
+              "image": "toUpdate"
+            }
+          ],
+          "step": "Cocer el chorizo y la costilla"
+        }
+      ],
+      "id": "-3Nf6fk"
     }
   ]
 }

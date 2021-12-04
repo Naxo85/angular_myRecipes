@@ -19,6 +19,10 @@ const routes: Routes = [
         component: CreateComponent,
       },
       {
+        path: 'edit/:id', // '/recipes/create'
+        component: CreateComponent,
+      },
+      {
         path: 'details/:id', // '/recipes/details'
         component: DetailsComponent,
       },

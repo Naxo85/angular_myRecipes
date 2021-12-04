@@ -1,17 +1,16 @@
-<h1>Add new recipe</h1>
+<h1>
+  <ng-template *ngIf="!recipe.id; else edit_recipe">Add new recipe</ng-template>
+  <ng-template #edit_recipe>Edit {{ recipe.title }}</ng-template>
+</h1>
 <mat-divider></mat-divider>
 
 <div fxLayout.gt-xs="row" fxLayout.xs="column" fxLayoutGap.gt-xs="30px">
-  <div fxFlex="70" fxLayout="column" fxfill>
-    <mat-form-field class="vertical-margin" fxFlex="100">
-      <mat-label>Id</mat-label>
-      <input matInput type="text" readonly value="id" [(ngModel)]="recipe.id" />
-    </mat-form-field>
+  <div fxFlex="65" fxLayout="column" fxfill>
     <mat-form-field class="vertical-margin" fxFlex="100">
       <mat-label>Title</mat-label>
       <input matInput type="text" required [(ngModel)]="recipe.title" />
     </mat-form-field>
-    <div fxLayout.gt-xs="row" fxLayout.xs="column" class="vertical-margin">
+    <div fxLayout.gt-xs="row" fxLayout.xs="column">
       <mat-checkbox [(ngModel)]="vegetarian" fxFlex="50" [(ngModel)]="recipe.vegetarian">
         Vegetarian
       </mat-checkbox>
@@ -23,12 +22,12 @@
       <mat-label>Ready in (Minutes)</mat-label>
       <input matInput type="number" min="1" [(ngModel)]="recipe.ready_in_minutes" />
     </mat-form-field>
-    <mat-form-field class="vertical-margin" fxFlex="100">
+    <mat-form-field fxFlex="100">
       <mat-label>Image name</mat-label>
       <input matInput type="url" [(ngModel)]="recipe.url_image" placeholder="Ex. image1.jpg" />
     </mat-form-field>
   </div>
-  <div fxFlex="30">
+  <div fxFlex="35">
     <img
       fxFill
       mat-card-image
@@ -54,7 +53,9 @@
 <div class="vertical-margin">
   <div fxLayout.gt-xs="row wrap" fxLayout.xs="column" fxLayoutGap.gt-xs="10px">
     <div *ngFor="let cuisine of cuisinesEnum | enumToArray">
-      <mat-checkbox (click)="addCuisine(cuisine)">{{ cuisine }}</mat-checkbox>
+      <mat-checkbox [ngModel]="cuisineChecked(cuisine)" (click)="addCuisine(cuisine)">
+        {{ cuisine }}
+      </mat-checkbox>
     </div>
   </div>
 </div>
