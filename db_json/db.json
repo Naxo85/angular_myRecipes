@@ -227,25 +227,6 @@
       ]
     },
     {
-      "id": "7",
-      "title": "Caldo gallego 7",
-      "ingredients": [
-        "verdura",
-        "patatas",
-        "lacon"
-      ],
-      "url_image": "image1.jpg",
-      "image_type": "jpg",
-      "vegetarian": false,
-      "glutenFree": false,
-      "readyInMinutes": 60,
-      "summary": "typical galician dish",
-      "cuisines": [
-        "Galician",
-        "Spanish"
-      ]
-    },
-    {
       "title": "Pollo al curry",
       "url_image": "image2.jpg",
       "image_type": "",

@@ -1,6 +1,6 @@
 <h1>
   <ng-template *ngIf="!recipe.id; else edit_recipe">Add new recipe</ng-template>
-  <ng-template #edit_recipe>Edit {{ recipe.title }}</ng-template>
+  <ng-template #edit_recipe>{{ recipe.title }}</ng-template>
 </h1>
 <mat-divider></mat-divider>
 
@@ -74,7 +74,7 @@
 <div fxLayout.gt-sm="row" fxLayout.xs="column" fxLayoutGap.gt-xs="30px">
   <button
     class="vertical-margin"
-    fxFlex.gt-sm="50"
+    fxFlex.gt-sm="33"
     color="accent"
     fxFill
     mat-raised-button
@@ -83,8 +83,26 @@
     <mat-icon>save</mat-icon>
     Save
   </button>
-  <button class="vertical-margin" fxFlex.gt-sm="50" color="error" fxFill mat-raised-button>
-    <mat-icon>cancel</mat-icon>
-    Cancel
+  <button
+    class="vertical-margin"
+    fxFlex.gt-sm="33"
+    color="error"
+    fxFill
+    mat-raised-button
+    (click)="return()"
+  >
+    <mat-icon>keyboard_return</mat-icon>
+    Return
+  </button>
+  <button
+    class="vertical-margin"
+    fxFlex.gt-sm="33"
+    color="warn"
+    fxFill
+    mat-raised-button
+    (click)="deleteRecipe()"
+  >
+    <mat-icon>delete_forever</mat-icon>
+    Delete
   </button>
 </div>

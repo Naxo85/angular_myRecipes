@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { switchMap } from 'rxjs/operators';
 
 import { Cuisines, Ingredient, Recipe, Step } from '../../interfaces/recipes.interface';
@@ -23,7 +23,11 @@ export class CreateComponent implements OnInit {
       .pipe(switchMap(({ id }) => this.recipesService.getRecipeById(id)))
       .subscribe((recipe) => (this.recipe = recipe));
   }
-  constructor(private activatedRoute: ActivatedRoute, private recipesService: RecipesService) {}
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private recipesService: RecipesService,
+    private router: Router
+  ) {}
 
   vegetarian: boolean = false;
   glutenFree: boolean = false;
@@ -88,5 +92,15 @@ export class CreateComponent implements OnInit {
         this.recipe = recipe;
       });
     }
+  }
+
+  deleteRecipe() {
+    this.recipesService.deleteRecipe(this.recipe).subscribe((recipe) => {
+      this.router.navigate(['/recipes/list']);
+    });
+  }
+
+  return() {
+    this.router.navigate(['/recipes/list']);
   }
 }
