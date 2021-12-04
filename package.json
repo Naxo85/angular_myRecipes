@@ -9,7 +9,7 @@
     "test": "ng test",
     "install_json_server": "npm install -g json-server",
     "info_json_server": "dont execute this, use below one: 'npm run start_json_server'",
-    "start_json_server": "cd src/assets/db_json & json-server --watch db.json"
+    "start_json_server": "cd db_json & json-server --watch db.json"
   },
   "private": true,
   "dependencies": {

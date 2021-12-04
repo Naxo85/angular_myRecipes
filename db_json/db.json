@@ -10,49 +10,77 @@
     {
       "id": "1",
       "title": "Caldo gallego",
-      "ingredients": ["verdura", "patatas", "lacon"],
+      "ingredients": [
+        "verdura",
+        "patatas",
+        "lacon"
+      ],
       "url_image": "image1.jpg",
       "image_type": "jpg",
       "vegetarian": false,
       "glutenFree": false,
       "readyInMinutes": 60,
       "summary": "typical galician dish",
-      "cuisines": ["Galician", "Spanish"]
+      "cuisines": [
+        "Galician",
+        "Spanish"
+      ]
     },
     {
       "id": "2",
       "title": "Caldo gallego 2",
-      "ingredients": ["verdura", "patatas", "lacon"],
+      "ingredients": [
+        "verdura",
+        "patatas",
+        "lacon"
+      ],
       "url_image": "image1.jpg",
       "image_type": "jpg",
       "vegetarian": false,
       "glutenFree": false,
       "readyInMinutes": 60,
       "summary": "typical galician dish",
-      "cuisines": ["Galician", "Spanish"]
+      "cuisines": [
+        "Galician",
+        "Spanish"
+      ]
     },
     {
       "id": "3",
       "title": "Caldo gallego 3",
-      "ingredients": ["verdura", "patatas", "lacon"],
+      "ingredients": [
+        "verdura",
+        "patatas",
+        "lacon"
+      ],
       "image_type": "jpg",
       "vegetarian": false,
       "glutenFree": false,
       "readyInMinutes": 60,
       "summary": "typical galician dish",
-      "cuisines": ["Galician", "Spanish"]
+      "cuisines": [
+        "Galician",
+        "Spanish"
+      ]
     },
     {
       "id": "8",
       "title": "Chiken with curry",
-      "ingredients": ["curry", "rice", "chicken"],
+      "ingredients": [
+        "curry",
+        "rice",
+        "chicken"
+      ],
       "url_image": "image2.jpg",
       "image_type": "jpg",
       "vegetarian": false,
       "glutenFree": false,
       "readyInMinutes": 30,
       "summary": "Curry Beef Over Rice Noodles might be just the main course you are searching for. This recipe serves 2 and costs $2.74 per serving. One serving contains <b>652 calories</b>, <b>61g of protein</b>, and <b>20g of fat</b>. 1 person were impressed by this recipe. It is a good option if you're following a <b>dairy free</b> diet. Head to the store and pick up onions, natural roasted peanuts, sambal oelek, and a few other things to make it today. To use up the fresh ginger you could follow this main course with the <a href=\"https://spoonacular.com/recipes/fresh-ginger-cookies-624884\">Fresh Ginger Cookies</a> as a dessert. This recipe is typical of Indian cuisine. From preparation to the plate, this recipe takes approximately <b>45 minutes</b>. All things considered, we decided this recipe <b>deserves a spoonacular score of 87%</b>. This score is awesome. Try <a href=\"https://spoonacular.com/recipes/burmese-beef-curry-with-vermicelli-rice-noodles-598957\">Burmese Beef Curry with Vermicelli Rice Noodles</a>, <a href=\"https://spoonacular.com/recipes/crockpot-beef-curry-with-noodles-506865\">Crockpot Beef Curry with Noodles</a>, and <a href=\"https://spoonacular.com/recipes/thai-style-red-curry-beef-noodles-248937\">Thai-Style Red Curry Beef Noodles</a> for similar recipes.",
-      "cuisines": ["Indian", "Asian"],
+      "cuisines": [
+        "Indian",
+        "Asian"
+      ],
       "steps": [
         {
           "number": 1,
@@ -144,50 +172,170 @@
     {
       "id": "4",
       "title": "Caldo gallego 4",
-      "ingredients": ["verdura", "patatas", "lacon"],
+      "ingredients": [
+        "verdura",
+        "patatas",
+        "lacon"
+      ],
       "url_image": "image1.jpg",
       "image_type": "jpg",
       "vegetarian": false,
       "glutenFree": false,
       "readyInMinutes": 60,
       "summary": "typical galician dish",
-      "cuisines": ["Galician", "Spanish"]
+      "cuisines": [
+        "Galician",
+        "Spanish"
+      ]
     },
     {
       "id": "5",
       "title": "Caldo gallego 5",
-      "ingredients": ["verdura", "patatas", "lacon"],
+      "ingredients": [
+        "verdura",
+        "patatas",
+        "lacon"
+      ],
       "url_image": "image1.jpg",
       "image_type": "jpg",
       "vegetarian": false,
       "glutenFree": false,
       "readyInMinutes": 60,
       "summary": "typical galician dish",
-      "cuisines": ["Galician", "Spanish"]
+      "cuisines": [
+        "Galician",
+        "Spanish"
+      ]
     },
     {
       "id": "6",
       "title": "Caldo gallego 6",
-      "ingredients": ["verdura", "patatas", "lacon"],
+      "ingredients": [
+        "verdura",
+        "patatas",
+        "lacon"
+      ],
       "url_image": "image1.jpg",
       "image_type": "jpg",
       "vegetarian": false,
       "glutenFree": false,
       "readyInMinutes": 60,
       "summary": "typical galician dish",
-      "cuisines": ["Galician", "Spanish"]
+      "cuisines": [
+        "Galician",
+        "Spanish"
+      ]
     },
     {
       "id": "7",
       "title": "Caldo gallego 7",
-      "ingredients": ["verdura", "patatas", "lacon"],
+      "ingredients": [
+        "verdura",
+        "patatas",
+        "lacon"
+      ],
       "url_image": "image1.jpg",
       "image_type": "jpg",
       "vegetarian": false,
       "glutenFree": false,
       "readyInMinutes": 60,
       "summary": "typical galician dish",
-      "cuisines": ["Galician", "Spanish"]
+      "cuisines": [
+        "Galician",
+        "Spanish"
+      ]
+    },
+    {
+      "title": "Pollo al curry",
+      "url_image": "image2.jpg",
+      "image_type": "",
+      "vegetarian": true,
+      "gluten_free": false,
+      "ready_in_minutes": 30,
+      "summary": "Pues el plato odiado del piso pollo",
+      "cuisines": [
+        "Asian",
+        "Indian"
+      ],
+      "steps": [
+        {
+          "number": 1,
+          "ingredients": [
+            {
+              "name": "aceite",
+              "image": "toUpdate"
+            },
+            {
+              "name": "pollo",
+              "image": "toUpdate"
+            }
+          ],
+          "step": "Dorar el pollo"
+        }
+      ],
+      "id": "k5gYjCy"
+    },
+    {
+      "title": "otro plato de caldo por favor",
+      "url_image": "image1.jpg",
+      "image_type": "",
+      "vegetarian": false,
+      "gluten_free": false,
+      "ready_in_minutes": 60,
+      "summary": "summary: otro plato de caldo por favor",
+      "cuisines": [
+        "Galician"
+      ],
+      "steps": [
+        {
+          "number": 1,
+          "ingredients": [
+            {
+              "name": "chorizo",
+              "image": "toUpdate"
+            },
+            {
+              "name": "costilla",
+              "image": "toUpdate"
+            }
+          ],
+          "step": "Pon a cocer la carne"
+        }
+      ],
+      "id": "X7vakDN"
+    },
+    {
+      "title": "otro curry",
+      "url_image": "image2.jpg",
+      "image_type": "",
+      "vegetarian": false,
+      "gluten_free": false,
+      "ready_in_minutes": 25,
+      "summary": "Summary: tenemos que poner uno",
+      "cuisines": [
+        "African"
+      ],
+      "steps": [
+        {
+          "number": 1,
+          "ingredients": [
+            {
+              "name": "pollo",
+              "image": "toUpdate"
+            },
+            {
+              "name": "sal",
+              "image": "toUpdate"
+            },
+            {
+              "name": "aceite",
+              "image": "toUpdate"
+            }
+          ],
+          "step": "Dorar el poollo siempre"
+        }
+      ],
+      "id": "S1XM03K"
     }
   ]
 }

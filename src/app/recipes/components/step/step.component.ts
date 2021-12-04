@@ -45,7 +45,7 @@ export class StepComponent implements OnInit {
         });
         if (addIngredient) {
           let newIngredient: Ingredient = {
-            name: ingredientInArray,
+            name: ingredientInArray.toLowerCase(),
             image: 'toUpdate',
           };
           this.step.ingredients.push(newIngredient);
