@@ -12,7 +12,7 @@ import { RecipesService } from '../../services/recipes.service';
   styles: [
     `
       .vertical-margin {
-        margin: 40px 0 0 0;
+        margin: 10px 0;
       }
     `,
   ],

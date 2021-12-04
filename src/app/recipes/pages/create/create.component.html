@@ -10,7 +10,7 @@
       <mat-label>Title</mat-label>
       <input matInput type="text" required [(ngModel)]="recipe.title" />
     </mat-form-field>
-    <div fxLayout.gt-xs="row" fxLayout.xs="column">
+    <div fxLayout.gt-xs="row" fxLayout.xs="column" class="vertical-margin">
       <mat-checkbox [(ngModel)]="vegetarian" fxFlex="50" [(ngModel)]="recipe.vegetarian">
         Vegetarian
       </mat-checkbox>
@@ -26,8 +26,17 @@
       <mat-label>Image name</mat-label>
       <input matInput type="url" [(ngModel)]="recipe.url_image" placeholder="Ex. image1.jpg" />
     </mat-form-field>
+    <mat-form-field fxFlex="100" class="vertical-margin" appearance="fill">
+      <mat-label>Summary</mat-label>
+      <textarea
+        matInput
+        placeholder="Write brief description..."
+        required
+        [(ngModel)]="recipe.summary"
+      ></textarea>
+    </mat-form-field>
   </div>
-  <div fxFlex="35">
+  <div fxFlex="35" class="vertical-margin">
     <img
       fxFill
       mat-card-image
@@ -35,18 +44,6 @@
       onerror="this.src='assets/images/no-image.png'"
     />
   </div>
-</div>
-
-<div fxLayout="column">
-  <mat-form-field class="vertical-margin" appearance="fill">
-    <mat-label>Summary</mat-label>
-    <textarea
-      matInput
-      placeholder="Write brief description..."
-      required
-      [(ngModel)]="recipe.summary"
-    ></textarea>
-  </mat-form-field>
 </div>
 
 <div>Select cuisines</div>
@@ -71,6 +68,8 @@
     <app-step [step]="step"></app-step>
   </div>
 </div>
+
+<mat-divider class="vertical-margin"></mat-divider>
 
 <div fxLayout.gt-sm="row" fxLayout.xs="column" fxLayoutGap.gt-xs="30px">
   <button
