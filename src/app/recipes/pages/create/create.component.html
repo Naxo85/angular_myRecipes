@@ -2,7 +2,7 @@
 <mat-divider></mat-divider>
 
 <div fxLayout.gt-xs="row" fxLayout.xs="column" fxLayoutGap.gt-xs="30px">
-  <div fxFlex="50" fxLayout="column" fxfill>
+  <div fxFlex="70" fxLayout="column" fxfill>
     <mat-form-field class="vertical-margin" fxFlex="100">
       <mat-label>Id</mat-label>
       <input matInput type="text" readonly value="id" [(ngModel)]="recipe.id" />
@@ -28,7 +28,7 @@
       <input matInput type="url" [(ngModel)]="recipe.url_image" placeholder="Ex. image1.jpg" />
     </mat-form-field>
   </div>
-  <div fxFlex="50">
+  <div fxFlex="30">
     <img fxFill mat-card-image [src]="getimageUrl()" />
   </div>
 </div>
@@ -61,11 +61,9 @@
       <mat-icon>add_box</mat-icon>
     </button>
   </div>
-  <mat-divider></mat-divider>
-  <div *ngFor="let step of recipe.steps" fxFill>
-    <app-step class="vertical-margin" [step]="step"></app-step>
+  <div *ngFor="let step of recipe.steps" fxFill class="vertical-margin">
+    <app-step [step]="step"></app-step>
   </div>
-  <mat-divider class="vertical-margin"></mat-divider>
 </div>
 
 <div fxLayout.gt-sm="row" fxLayout.xs="column" fxLayoutGap.gt-xs="30px">

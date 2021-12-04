@@ -1,6 +1,22 @@
-<div fxLayout="column" fxfill>
-  <mat-form-field class="vertical-margin" fxFlex="100">
-    <mat-label>Number</mat-label>
-    <input matInput type="number" readonly [(ngModel)]="step.number" />
-  </mat-form-field>
-</div>
+<mat-expansion-panel hideToggle>
+  <mat-expansion-panel-header>
+    <span fxLayoutAlign=" center">Step {{ step.number }}</span>
+    <span class="spacer"></span>
+  </mat-expansion-panel-header>
+  <mat-panel-description>
+    <div fxLayout="column" fxFlex="100">
+      <mat-form-field>
+        <mat-label>Description</mat-label>
+        <input matInput type="text" [(ngModel)]="step.step" />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Ingredients (separate them with commas)</mat-label>
+        <input matInput type="text" [(ngModel)]="updatedIngredients" />
+      </mat-form-field>
+
+      <button mat-button (click)="editIngredients()" color="accent">
+        Update step before save<mat-icon>upgrade</mat-icon>
+      </button>
+    </div>
+  </mat-panel-description>
+</mat-expansion-panel>

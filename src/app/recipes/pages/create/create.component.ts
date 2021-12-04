@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Cuisines, Recipe, Step } from '../../interfaces/recipes.interface';
+import { Cuisines, Ingredient, Recipe, Step } from '../../interfaces/recipes.interface';
 import { UrlImagePipe } from '../../pipes/get-url-image.pipe';
 
 @Component({
@@ -18,7 +18,7 @@ export class CreateComponent {
   glutenFree: boolean = false;
   id: string = '';
   cuisinesEnum: Object = Cuisines;
-  number_step: number = 0;
+  last_number_step: number = 0;
 
   recipe: Recipe = {
     title: '',
@@ -46,9 +46,9 @@ export class CreateComponent {
   }
 
   addBlankStep() {
-    this.number_step = this.number_step + 1;
-    var step: Step = {
-      number: this.number_step,
+    this.last_number_step = this.last_number_step + 1;
+    let step: Step = {
+      number: this.last_number_step,
       ingredients: [],
       step: '',
     };
