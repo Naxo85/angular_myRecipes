@@ -1,6 +1,6 @@
 <h1>
-  <ng-template *ngIf="!recipe.id; else edit_recipe">Add new recipe</ng-template>
-  <ng-template #edit_recipe>{{ recipe.title }}</ng-template>
+  <div *ngIf="!recipe.id">Add new recipe</div>
+  <div *ngIf="recipe.id">{{ recipe.title }}</div>
 </h1>
 <mat-divider></mat-divider>
 
@@ -101,6 +101,7 @@
     fxFill
     mat-raised-button
     (click)="deleteRecipe()"
+    *ngIf="recipe.id"
   >
     <mat-icon>delete_forever</mat-icon>
     Delete

@@ -1,0 +1,10 @@
+<h1>Are you sure?</h1>
+
+<mat-divider></mat-divider>
+<br />
+<p>Delete recipe '{{ data.title }}'?</p>
+
+<div>
+  <button mat-button (click)="delete()" color="warn">Yes, delete it!</button>
+  <button mat-button (click)="close()" color="accent">No...</button>
+</div>

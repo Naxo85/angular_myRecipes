@@ -4,6 +4,7 @@ import { Recipe } from '../interfaces/recipes.interface';
 
 @Pipe({
   name: 'getUrlImage',
+  pure: true, //by default is true, only is invoked when the argument received changes
 })
 export class UrlImagePipe implements PipeTransform {
   transform(recipe: Recipe | undefined): string {

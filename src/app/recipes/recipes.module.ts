@@ -15,6 +15,7 @@ import { UrlImagePipe } from './pipes/get-url-image.pipe';
 import { RecipeSearchComponent } from './components/recipe-search/recipe-search.component';
 import { EnumToArrayPipe } from './pipes/enum-to-array.pipe';
 import { StepComponent } from './components/step/step.component';
+import { ConfirmDeleteComponent } from './components/confirm-delete/confirm-delete.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { StepComponent } from './components/step/step.component';
     RecipeSearchComponent,
     EnumToArrayPipe,
     StepComponent,
+    ConfirmDeleteComponent,
   ],
   imports: [CommonModule, RecipesRoutingModule, FlexLayoutModule, MaterialModule, FormsModule],
 })
