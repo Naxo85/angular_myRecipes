@@ -19,9 +19,11 @@ import { RecipesService } from '../../services/recipes.service';
 })
 export class CreateComponent implements OnInit {
   ngOnInit(): void {
-    this.activatedRoute.params
-      .pipe(switchMap(({ id }) => this.recipesService.getRecipeById(id)))
-      .subscribe((recipe) => (this.recipe = recipe));
+    if (this.router.url.includes('edit')) {
+      this.activatedRoute.params
+        .pipe(switchMap(({ id }) => this.recipesService.getRecipeById(id)))
+        .subscribe((recipe) => (this.recipe = recipe));
+    }
   }
   constructor(
     private activatedRoute: ActivatedRoute,
