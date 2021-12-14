@@ -7,7 +7,7 @@
   </mat-card-header>
 
   <!--TODO: retrieve these images from some other place: AWS S3?? -->
-  <img mat-card-image [src]="recipe | getUrlImage" />
+  <img height="250px" mat-card-image [src]="recipe | getUrlImage" />
 
   <mat-card-content>
     <span *ngFor="let cuisine of recipe.cuisines">{{ cuisine }} </span>
